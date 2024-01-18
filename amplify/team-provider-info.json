@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-movielist-dev-135902-authRole",
+      "UnauthRoleArn": "arn:aws:iam::965050671612:role/amplify-movielist-dev-135902-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::965050671612:role/amplify-movielist-dev-135902-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-movielist-dev-135902-deployment",
+      "UnauthRoleName": "amplify-movielist-dev-135902-unauthRole",
+      "StackName": "amplify-movielist-dev-135902",
+      "StackId": "arn:aws:cloudformation:us-east-1:965050671612:stack/amplify-movielist-dev-135902/d6ed1460-b5df-11ee-bb81-123d1be84faf",
+      "AmplifyAppId": "d2fe2oomaz2nz7"
+    },
+    "categories": {
+      "auth": {
+        "movielist41baa1c9": {}
+      },
+      "api": {
+        "movielist": {}
+      },
+      "storage": {
+        "moviess3": {}
+      }
+    }
+  }
+}

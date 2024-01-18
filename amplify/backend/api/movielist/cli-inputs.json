@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "movielist",
+    "serviceName": "AppSync",
+    "defaultAuthType": {
+      "mode": "AMAZON_COGNITO_USER_POOLS",
+      "cognitoUserPoolId": "authmovielist41baa1c9"
+    }
+  }
+}

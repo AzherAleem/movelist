@@ -1,0 +1,63 @@
+{
+  "api": {
+    "movielist": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "UserPoolId"
+          ],
+          "category": "auth",
+          "resourceName": "movielist41baa1c9"
+        }
+      ],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [],
+          "defaultAuthentication": {
+            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+            "userPoolConfig": {
+              "userPoolId": "authmovielist41baa1c9"
+            }
+          }
+        }
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync"
+    }
+  },
+  "auth": {
+    "movielist41baa1c9": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
+  "storage": {
+    "moviess3": {
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "S3"
+    }
+  }
+}
